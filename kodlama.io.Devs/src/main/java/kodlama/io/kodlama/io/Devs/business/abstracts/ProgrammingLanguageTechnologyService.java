@@ -1,0 +1,20 @@
+package kodlama.io.kodlama.io.Devs.business.abstracts;
+
+import java.util.List;
+
+import kodlama.io.kodlama.io.Devs.business.requests.programmingLanguageTechnologyRequest.CreateProgrammingLanguageTechnologyRequest;
+import kodlama.io.kodlama.io.Devs.business.requests.programmingLanguageTechnologyRequest.DeleteProgrammingLanguageTechnologyRequest;
+import kodlama.io.kodlama.io.Devs.business.requests.programmingLanguageTechnologyRequest.UpdateProgrammingLanguageTechnologyRequest;
+import kodlama.io.kodlama.io.Devs.business.responses.ProgrammingLanguageTechnologyResponse.GetAllProgrammingLanguageTechnologiesResponse;
+
+public interface ProgrammingLanguageTechnologyService {
+
+	void add(CreateProgrammingLanguageTechnologyRequest createProgrammingLanguageTechnologyRequest) throws Exception;
+
+	void update(UpdateProgrammingLanguageTechnologyRequest updateProgrammingLanguageTechnologyRequest) throws Exception;
+
+	void delete(DeleteProgrammingLanguageTechnologyRequest deleteProgrammingLanguageTechnologyRequest) throws Exception;
+
+	List<GetAllProgrammingLanguageTechnologiesResponse> getAll();
+
+}
